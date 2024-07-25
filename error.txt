@@ -44,3 +44,9 @@ GET /v1/auth 1721806420992 This is a forced error
 GET /v1/auth 1721806484768 This is a forced error
 GET /v1/auth 1721807536871 This is a forced error
 GET /v1/auth 1721809448117 This is a forced error
+DELETE /v1/job/66a222fd36bd1cd1114642f9 1721903630043 Cannot access 'user' before initialization
+DELETE /v1/job/66a222fd36bd1cd1114642f9 1721903634491 Cannot access 'user' before initialization
+DELETE /v1/job/66a222fd36bd1cd1114642f9 1721903859469 Cannot access 'user' before initialization
+DELETE /v1/job/66a222fd36bd1cd1114642f9 1721903893582 Cannot access 'user' before initialization
+DELETE /v1/job/66a222fd36bd1cd1114642f9 1721904077846 Cannot access 'user' before initialization
+DELETE /v1/job/66a222fd36bd1cd1114642f9 1721904080050 Cannot access 'user' before initialization

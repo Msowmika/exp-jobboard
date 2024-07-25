@@ -2,7 +2,9 @@ const express = require('express')
 const app = express()
 port= process.env.PORT||3000
 const fs = require('fs')
+const authMiddleware = require('./middleware/auth')
 const authRoute = require('./routes/auth')
+const jobRoute = require('./routes/job')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const dotenv = require('dotenv')
@@ -22,7 +24,7 @@ app.use((req,res,next)=>{
     });
     next()
 });
-
+app.use('/v1/job',authMiddleware,jobRoute)
 app.use('/v1/auth',authRoute)
 
 app.use((err,req,res,next)=>{
